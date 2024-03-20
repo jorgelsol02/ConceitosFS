@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\complete",
+    "\\complete\\src",
+    "\\complete\\src\\main",
+    "\\initial",
+    "\\initial\\src",
+    "\\initial\\src\\test",
+    "\\initial\\src\\test\\java",
+    "\\initial\\src\\test\\java\\com",
+    "\\initial\\src\\test\\java\\com\\example",
+    "\\initial\\src\\test\\java\\com\\example\\restservice"
+  ],
+  "SelectedNode": "\\complete\\src\\main",
+  "PreviewInSolutionExplorer": false
+}

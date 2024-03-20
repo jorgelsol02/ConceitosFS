@@ -31,15 +31,27 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 public class GreetingControllerTests {
 
+	// teste comentário 2
+
 	@Autowired
 	private MockMvc mockMvc;
 
+
+	// este método é um teste e ele está verificando se ao fazer uma solicitação GET para /greeting
+	// a resposta seja OK (HTTP 200), e seu conteúdo JSON é "Hello, World!".
 	@Test
 	public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
 
 		this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
 				.andExpect(jsonPath("$.content").value("Hello, World!"));
 	}
+
+	
+	// este método é um teste e ele está verificando se ao fazer uma solicitação GET para /greeting
+	// com o parâmetro "name" que foi definido como "Spring Community", se a resposta retorna o status OK (HTTP 200)
+	// e seu conteúdo JSON é "Hello, Spring Community".
+	
+
 
 	@Test
 	public void paramGreetingShouldReturnTailoredMessage() throws Exception {
